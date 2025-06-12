@@ -1,12 +1,18 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
-  root: 'frontend', // Define el directorio raíz correctamente
+  root: path.resolve(__dirname), // Usamos la raíz del proyecto como base
   build: {
-    outDir: 'dist', // Directorio de salida dentro de frontend/
-    emptyOutDir: true, // Limpia la carpeta antes de construir
+    outDir: 'frontend/dist', // Los archivos generados van en frontend/dist
+    emptyOutDir: true, // Limpia antes de compilar
     rollupOptions: {
-      input: 'public/index.html', // Entrada válida para la compilación
+      input: path.resolve(__dirname, 'index.html'), // Definimos el nuevo archivo de entrada
+    },
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'frontend/src'), // Alias para facilitar la importación de archivos
     },
   },
 });
