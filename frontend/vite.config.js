@@ -1,20 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  esbuild: {
-    loader: 'jsx',
-    include: /\.jsx?$/,
-  },
+  root: 'frontend', // Define el directorio raíz correctamente
   build: {
+    outDir: 'dist', // Directorio de salida dentro de frontend/
+    emptyOutDir: true, // Limpia la carpeta antes de construir
     rollupOptions: {
-      output: {
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]',
-      },
+      input: 'public/index.html', // Entrada válida para la compilación
     },
   },
 });
