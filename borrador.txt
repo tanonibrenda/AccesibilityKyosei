@@ -1,42 +1,17 @@
-📁 kyosei_accesibilidad
- ├── 📁 frontend
- │    ├── 📁 public
- │    │    ├── index.html  ✅ (Debe estar en la raíz para GitHub Pages)
- │    │    ├── 📁 images/  ✅ (Aquí estarán las imágenes)
- │    ├── 📁 src
- │    │    ├── components/  ✅ (Aquí estarán los componentes reutilizables)
- │    │         ├── Header
- │    │         ├── Footer
- │    │    ├── App.jsx
- │    │    ├── main.jsx
- │    │    ├── styles.css
- │    │    ├── pages/
- │    │         ├── Home
- │    │         ├── Nosotros
- │    │         ├── Accesibilidad
- │    │         ├── Servicios
- │    │         ├── Contacto
- │    │         ├── Carrito de compras
- │    ├── package.json
- │    ├── vite.config.js
- │    ├── .gitignore
- │    ├── README.md
- │
- ├── 📁 backend
- │    ├── server.js ✅ (Servidor con Express)
- │    ├── database.js ✅ (Conexión a la base de datos)
- │    ├── routes/ ✅ (Rutas de la API)
- │    ├── models/ ✅ (Modelos de la base de datos)
- │    ├── package.json
- │    ├── .env
- │    ├── .gitignore
- │
- ├── 📁 images  ✅ (Carpeta para imágenes generales del proyecto)
- │    ├── logo.png
- │    ├── banner.jpg
- │
- ├── README.md
- ├── .gitignore
- ├── package.json
- ├── LICENSE
- ├── index.html ✅ (⚠️ Este archivo debe estar en la raíz para el deploy en GitHub Pages)
+/tu-proyecto
+│
+├── public_html/
+│   ├── index.html
+│   ├── servicios.html
+│   ├── carrito.html
+│   ├── ...otros HTML
+│   ├── js/
+│   └── css/
+│
+├── backend/
+│   ├── server.js
+│   ├── db.js
+│   └── routes/
+│       └── alumnos.js
+│
+├── package.json
