@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros — Kyosei Accesibilidad</title>
+
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main class="container my-5 pt-4" aria-labelledby="titulo-nosotros">
+      <h1 id="titulo-nosotros" class="display-5 fw-bold text-center text-danger mb-5">Nosotros</h1>
+
+      <!-- Misión -->
+      <section class="row mb-5 align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="img/MISIÓN.png" alt="Personas simbolizando inclusión con recortes de papel" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold text-primary">Nuestra Misión</h2>
+          <p>
+            Construimos un mundo más accesible y justo a través de servicios especializados en accesibilidad.
+            Comenzando por transformar la educación virtual mediante la capacitación docente y el testing de accesibilidad, trabajamos para que cada persona, sin importar sus capacidades, pueda participar plenamente en la era digital.
+          </p>
+        </div>
+      </section>
+
+      <!-- Visión -->
+      <section class="row mb-5 align-items-center flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <img src="img/vision.jpg" alt="grupo de personas leyendo en Braille" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold text-primary">Nuestra Visión</h2>
+          <p>
+            Impulsar una sociedad digital equitativa donde la accesibilidad no sea una excepción, sino la norma.
+            Buscamos liderar procesos de transformación inclusiva en instituciones educativas, empresas y entornos digitales.
+          </p>
+        </div>
+      </section>
+
+      <!-- Valores -->
+      <section class="row mb-5 align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="img/valores.png" alt="Mujer en silla de ruedas con sus perros" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold text-primary">Nuestros Valores</h2>
+          
+          <h3>Kyosei, la búsqueda del bien común</h3>
+            <p >
+             Nuestra filosofía central. Significa trabajar en comunidad para el bien común. Cada decisión, cada servicio y cada acción está orientada hacia el bienestar colectivo. Creemos que la prosperidad mutua se alcanza cuando todas las personas pueden participar plenamente en la sociedad.
+            </p>
+            <br>
+            <p>La accesibilidad es un derecho, no un privilegio. Trabajamos para que cada experiencia digital sea accesible por diseño, eliminando barreras que impiden la participación plena de las personas.
+Por eso trabajamos con amor, pasión y tenacidad resiliente; para generar un impacto social auténtico.</p>
+        </div>
+      </section>
+      <div><h2 class="fw-bold text-primary">Fundadoras</h2></div>
+      <section class="row mb-5 align-items-center flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <img src="img/Ximena Romero.png" alt="foto de Ximena Romero" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold text-primary">Ximena Romero</h2>
+          <p>
+            Tester en Accesibilidad de 5 años de experiencia. Me encanta trabajar con personas que desafían las barreras y me inspira la creatividad y la innovación.
+          </p>
+        </div>
+      </section>
+<section class="row mb-5 align-items-center flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <img src="img/Brenda Tanoni.png" alt="foto de Brenda Tanoni" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold text-primary">Brenda Tanoni</h2>
+          <p>
+           Médica. Docente. Estudiante de programación. QA junior. Siempre buscando aprender y mejorar.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("header").innerHTML = html;
+        });
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
