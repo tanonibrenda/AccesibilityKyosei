@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios — Kyosei Accesibilidad</title>
+
+  <!-- Bootstrap & icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header"></div>
+
+  <main class="container my-5 pt-4" aria-labelledby="titulo-servicios">
+    <h1 id="titulo-servicios" class="display-5 fw-bold text-danger text-center mb-5">Servicios</h1>
+
+    <!-- Curso Taller Moodle Accesible -->
+    <section class="bg-light rounded p-4 mb-5 shadow-sm">
+      <h2 class="fw-bold text-primary mb-3">Taller Moodle Accesible</h2>
+      <p>
+        Taller teórico-práctico destinado a docentes que utilizan Moodle. Aprenderás sobre:
+      </p>
+      <ul>
+        <li>Introducción a la accesibilidad</li>
+        <li>Tipografías y semántica</li>
+        <li>Selección de colores</li>
+        <li>Textos alternativos e interacción multimedia</li>
+        <li>Cómo acompañar a estudiantes con discapacidad</li>
+      </ul>
+      <p><strong>Primera comisión: agosto 2025</strong></p>
+
+      <div class="d-flex flex-wrap gap-3 mt-3">
+        <a href="carrito.html" class="btn btn-primary"><i class="bi bi-cart-plus me-1"></i>Comprar Curso</a>
+        <a href="contacto.html" class="btn btn-outline-dark"><i class="bi bi-info-circle me-1"></i>Más Información</a>
+      </div>
+
+      <!-- Botones de donación -->
+      <!-- <div class="mt-4 d-flex flex-wrap gap-3">
+        <a
+          href="https://www.paypal.com/donate?hosted_button_id=TUBOTONID"
+          target="_blank"
+          class="btn btn-outline-success"
+          aria-label="Donar con PayPal"
+        >
+          <i class="bi bi-paypal me-1"></i>Donar con PayPal
+        </a>
+        <a
+          href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=TU_PREFERENCIA_ID"
+          target="_blank"
+          class="btn btn-outline-warning"
+          aria-label="Donar con MercadoPago"
+        >
+          <i class="bi bi-currency-dollar me-1"></i>Donar con Mercado Pago
+        </a>
+      </div> -->
+    </section>
+
+    <!-- Servicio: Testing de Accesibilidad -->
+    <section class="bg-white border rounded p-4 shadow-sm">
+      <h2 class="fw-bold text-primary mb-3">Testing de Accesibilidad</h2>
+      <p>
+        Identificamos obstáculos y garantizamos que tu plataforma sea inclusiva, intuitiva y eficiente. Cumplí normativas, mejorá la experiencia del usuario y ampliá tu alcance.
+      </p>
+      <a href="#" class="btn btn-outline-dark"><i class="bi bi-info-circle me-1"></i>Más Información</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header").innerHTML = html; });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("footer").innerHTML = html; });
+  </script>
+</body>
+</html>
