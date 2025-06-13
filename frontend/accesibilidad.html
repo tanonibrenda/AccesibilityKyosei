@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesibilidad — Kyosei</title>
+
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- CONTENIDO -->
+    <main class="container my-5 pt-4" aria-labelledby="titulo-accesibilidad">
+      <h1 id="titulo-accesibilidad" class="display-5 fw-bold text-danger text-center mb-5">Accesibilidad</h1>
+
+      <!-- Sección 1: ¿Qué es la accesibilidad digital? -->
+      <section class="row align-items-center mb-5" aria-labelledby="que-es-accesibilidad">
+        <div class="col-md-6 text-center text-md-start">
+          <h2 id="que-es-accesibilidad" class="fw-bold text-primary mb-3">¿Qué es la Accesibilidad Digital?</h2>
+          <p>
+            La accesibilidad digital es el diseño y desarrollo de productos digitales que puedan ser utilizados por todas las personas, independientemente de sus capacidades físicas, cognitivas o sensoriales. No se trata solo de cumplir con normativas, sino de crear experiencias digitales verdaderamente inclusivas que permitan a cada usuario participar plenamente en la era digital.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+       <img
+  src="img/Accesibilidad.png"
+  alt="Persona usando silla de ruedas frente a computadora"
+  class="img-fluid rounded shadow-sm img-max-300"
+/>
+
+        </div>
+      </section>
+
+      <!-- Sección 2: ¿Por qué es fundamental la inclusión digital? -->
+      <section class="bg-light p-4 rounded" aria-labelledby="inclusion-digital">
+        <h2 id="inclusion-digital" class="fw-bold text-primary mb-3 text-center">¿Por qué la Inclusión Digital es Fundamental?</h2>
+        <p class="text-center">
+          Porque garantiza que nadie quede afuera. En un mundo cada vez más digitalizado, la accesibilidad es un derecho, no un lujo. Construir entornos virtuales accesibles es construir una sociedad más justa y participativa para todas las personas.
+        </p>
+        <h2 id="inclusion-digital" class="fw-bold text-primary mb-3 text-center">Beneficios Universales</h2>
+        <div>
+            <ul>
+            <li>Mejora la experiencia de usuario para personas mayores</li>
+            <li>Facilita la navegación en condiciones adversas (ruido, poca luz)</li>
+            <li>Optimiza el rendimiento en dispositivos con conectividad limitada</li>
+            <li>Aumenta la usabilidad para usuarios con diferentes niveles de experiencia tecnológica</li>
+            </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("header").innerHTML = html;
+        });
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
